@@ -14,7 +14,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, "./dist"),
       publicPath: path.resolve(__dirname, "./dist"),
-      filename: "ajax-form.js",
+      filename: "formaj.js",
       library: "Formaj",
       libraryTarget: "window",
       libraryExport: "default"

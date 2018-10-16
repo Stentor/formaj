@@ -1,6 +1,6 @@
 {
   "name": "formaj",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "module": "src/index.js",
   "license": "MIT",
   "peerDependencies": {
@@ -10,6 +10,10 @@
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
     "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stentor/formaj.git"
   },
   "devDependencies": {
     "vue-template-compiler": "^2.5.17",

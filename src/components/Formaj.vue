@@ -1,16 +1,23 @@
 <template>
-    <h1>HEllo</h1>
+    <form :action="action" :method="method">
+        <slot></slot>
+    </form>
 </template>
 
 <script>
 export default {
-
+    props: {
+        method: {type: String, default: 'post'},
+        action: {type: String, default: ''}
+    },
+    data(){
+        return {
+            
+        }
+    }
 }
 </script>
 
-<style lang="scss">
-$color: green;
-    h1{
-        color: $color;
-    }
+<style>
+
 </style>

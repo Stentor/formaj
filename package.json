@@ -1,6 +1,7 @@
 {
   "name": "formaj",
-  "version": "0.0.5",
+  "version": "0.0.7",
+  "main": "dist/formaj.js",
   "module": "src/index.js",
   "license": "MIT",
   "peerDependencies": {

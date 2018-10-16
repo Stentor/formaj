@@ -16,7 +16,7 @@ module.exports = (env, argv) => {
       publicPath: path.resolve(__dirname, "./dist"),
       filename: "formaj.js",
       library: "Formaj",
-      libraryTarget: "window",
+      libraryTarget: "var",
       libraryExport: "default"
     },
     resolve: {

@@ -5,11 +5,10 @@ var VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 var node_env;
 
-
 module.exports = (env, argv) => {
-	node_env = argv.mode;
+  node_env = argv.mode;
   return {
-    entry: path.resolve(__dirname, "./src/index.js"),
+    entry: ['babel-regenerator-runtime', path.resolve(__dirname, "./src/index.js")],
 
     output: {
       path: path.resolve(__dirname, "./dist"),
@@ -19,6 +18,9 @@ module.exports = (env, argv) => {
       libraryTarget: "var",
       libraryExport: "default"
     },
+    externals: [
+      'axios', 'vue'
+    ],
     resolve: {
       alias: {
         vue$: "vue/dist/vue.js"

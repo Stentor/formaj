@@ -1,10 +1,11 @@
 {
   "name": "formaj",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "main": "dist/formaj.js",
   "module": "src/index.js",
   "license": "MIT",
   "peerDependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.17"
   },
   "scripts": {
@@ -17,11 +18,12 @@
     "url": "https://github.com/Stentor/formaj.git"
   },
   "devDependencies": {
-    "vue-template-compiler": "^2.5.17",
     "@babel/core": "^7.1.2",
     "babel-loader": "^8.0.4",
     "babel-minify-webpack-plugin": "^0.3.1",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "babel-regenerator-runtime": "^6.5.0",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "node-sass": "^4.9.4",
@@ -29,6 +31,7 @@
     "style-loader": "^0.23.1",
     "svg-inline-loader": "^0.8.0",
     "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",

@@ -8,7 +8,7 @@ var node_env;
 module.exports = (env, argv) => {
   node_env = argv.mode;
   return {
-    entry: ['babel-regenerator-runtime', path.resolve(__dirname, "./src/index.js")],
+    entry: [path.resolve(__dirname, "./src/index.js")],
 
     output: {
       path: path.resolve(__dirname, "./dist"),
